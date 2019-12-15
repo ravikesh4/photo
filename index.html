@@ -8,9 +8,18 @@
     <link rel="stylesheet" href="css/uikit.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/uikit-icons.min.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
     <title>Photography</title>
 </head>
 <body>
+
+    <div class="loader uk-flex-middle uk-text-center" style="padding-top: 20%; padding-bottom: 60%;">
+        <img src="images/logo.png" alt="" style="width: 70px;">
+    </div>
+
     <header>
         <div uk-sticky="">
             <nav class="" style="background-color: white;" uk-navbar style="position: relative; z-index: 9999;">
@@ -219,7 +228,11 @@
     <script src="js/uikit.min.js"></script>
     <script src="js/active.js"></script>
 
-    
+    <script>
+        $(window).on("load", function() {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
 
 </body>
 </html>
